@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Rubik';
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+    display: inline-block;
+    color: #000000;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding-top: 31px;
+    padding-bottom: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .5s;
+}
+
+/* псевдокласс :hover - задаёт эффект наведения элементу */
+.nav-link:hover {
+    border-color: #000000;
+}
+
+.nav-form {
+    display: flex;
+}
+
+.nav-search {
+    outline: none;
+    border: 1px solid #000000;
+    border-radius: 10px 0px 0px 10px;
+    padding: 8px 12px;
+    color: #000000;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav-search::placeholder {
+    color: #000000;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.nav-btn {
+    border: none;
+    background: #000000;
+    border-radius: 0px 10px 10px 0px;
+    padding: 0 16px;
+    color: #FFFFFF;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header-content {
+    background: url('../images/header-bg.png') no-repeat top /cover;
+    height: 100vh;
+    /* vh - view height - видимая область экрана */
+    background-attachment: fixed;
+    /* определяет позицию заднего фона по отношению к скролу */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    color: #FFFFFF;
+    line-height: 70px;
+    font-size: 59px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.header-description {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background: #181D28;
+    padding: 20px 0;
+    transition: .5s;
+}
+
+.card-text {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 24px;
+}
+
+.cards {
+    display: flex;
+}
+
+.card:hover {
+    background: #6B4B6B;
+}
+
+.gear {
+    padding: 40px 0;
+}
+
+.gear-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.gear-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.gear-description:nth-of-type(1) {
+    margin-bottom: 18px;
+}
+
+.gear-img {
+    width: 100%;
+    margin-top: 40px;
+}
+.clothing-title{
+    font-family: 'Rubik';
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+text-align: center;
+margin-bottom: 30px;
+}
+.clothing-lists{
+    display: flex;
+    justify-content: space-between;
+}
+.clothing-list{
+   
+}
+.clothing-link{
+    font-family: 'Rubik';
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+color: #000000;
+display: block;
+margin: 14px 0 0 0 ;
+}
+.footer{
+    background-color: #181D28;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px ;
+}
+.footer-logo{
+    margin-left: 35px;
+    padding: 35px 0;
+}
+.footer-links{
+    display: flex;
+    column-gap: 30px;
+   
+margin-right: 35px;
+}
+.footer-link{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
